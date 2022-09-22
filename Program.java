@@ -1,7 +1,3 @@
-// 1. Выбросить случайное целое число в диапазоне
-// от -1000 до 1000 и сохранить в i
-
-
 import java.util.Random;
 import java.util.ArrayList;
 import java.io.FileWriter;
@@ -61,7 +57,7 @@ public class Program {
         System.out.println("]");
     }
 
-     static void writeToFile(Integer[] array, String name) {
+    static void writeToFile(Integer[] array, String name) {
         try (FileWriter fw = new FileWriter(name + ".txt", false)) {
             fw.write("[");
             for (int i = 0; i < array.length; i++) {
@@ -85,8 +81,6 @@ public class Program {
 
         System.out.println(i);
         System.out.println(n);
-        // printArray(m1);
-        // printArray(m2);
         writeToFile(m1,"m1");
         writeToFile(m2, "m2");
 
